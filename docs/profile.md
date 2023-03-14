@@ -1,0 +1,3 @@
+Hi! I'm Yunqin Zhu, a junior student at USTC, majoring in Artificial Intelligence. My research interests include data mining, machine learning and applications of AI in real economic problems. I'm also an enthusiast for web development, game development and digital art.
+
+Currently, I'm looking for a summer research program in 2023. If you are interested in my background, please don't hesitate to offer me an opportunity. Thanks in advance!
