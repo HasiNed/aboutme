@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "dotenv -e .env -c -- bash -c 'next dev -H $NEXTJS_HOST -p $NEXTJS_PORT'",
     "start": "dotenv -e .env -c -- bash -c 'next start -H $NEXTJS_HOST -p $NEXTJS_PORT'",
-    "build": "dotenv -e .env -c -- bash -c 'next build'",
+    "build": "dotenv -e .env -c -- bash -c 'next build && next export'",
     "lint": "next lint"
   },
   "dependencies": {

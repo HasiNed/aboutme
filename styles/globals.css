@@ -23,6 +23,13 @@
   --border-rgb: 108, 108, 108;
 }
 
+/* mobile */
+@media screen and (max-width: 640px) {
+  :root {
+    font-size: small;
+  }
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

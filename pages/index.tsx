@@ -1,4 +1,3 @@
-import '@/styles/globals.css'
 import styles from '@/styles/home.module.css'
 
 import logoBadge from '@/assets/ustc-badge.svg'
@@ -43,21 +42,31 @@ import {
 
 import profile_md from '@/docs/profile.md'
 
+import Head from 'next/head'
+import Link from 'next/link'
 import Image from 'next/image'
 import Markdown from '@/components/Markdown'
 import HoverImage from '@/components/HoverImage'
 
-export default async function HomePage() {
+export default function HomePage() {
   return (
-    <main className={styles.main}>
-      <NavBar />
-      <div className={styles.grid}>
-        <Profile />
-        <Education />
-        <Experience />
-        <Skills />
-      </div>
-    </main>
+    <>
+      <Head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <title>About Yunqin Zhu</title>
+        <link rel="icon" href="http://home.ustc.edu.cn/~hasined/favicon.ico" />
+      </Head>
+      <main className={styles.main}>
+        <NavBar />
+        <div className={styles.grid}>
+          <Profile />
+          <Education />
+          <Experience />
+          <Skills />
+        </div>
+      </main>
+    </>
   )
 }
 
@@ -218,13 +227,13 @@ function Experience() {
             <div className={styles.left}>
               University of North Carolina at Charlotte, KAIM Research Group
             </div>
-            <div className={styles.right}>Charlotte, US</div>
+            <div className={styles.right}>Charlotte, USA</div>
           </div>
           <div className={styles.subname}>
             <div className={styles.left}>
-              Remote Rsearch Intern, supervised by{' '}
+              Remote Research Intern, supervised by{' '}
               <a href="https://belkcollege.charlotte.edu/directory/lina-zhou">
-                Prof. Lina Zhou
+                Dr. Lina Zhou
               </a>{' '}
               and her Ph.D. fellows
             </div>
@@ -233,8 +242,7 @@ function Experience() {
           <div className={styles.line}>
             Fields of Study:&nbsp;
             <em>
-              Misinformation Detection, Sentiment Analysis and Multi-Modal
-              Learning
+              Content Moderation, Sentiment Analysis and Multi-Modal Learning
             </em>
           </div>
           <div className={styles.line}>
@@ -243,27 +251,25 @@ function Experience() {
               <ul>
                 <GoChevronRight className={styles.icon} />
                 <span>
-                  Predict the results of content moderation on Reddit with the
-                  RoBERTa model and analyze the impact of multi-type,
-                  multi-level user engagement characteristics on model
-                  performance.
+                  Leveraging RoBERTa to predict content moderation decisions and
+                  analyzing the impact of various user engagement
+                  characteristics on model performance
                 </span>
               </ul>
               <ul>
                 <GoChevronRight className={styles.icon} />
                 <span>
-                  Apply deep learning methods of natural language understanding
-                  to analyze the public&apos;s attitudes and sentiments towards
-                  different trending topics on social media in the post-pandemic
-                  era.
+                  Applying N-shot learning on semi-labeled data to deepen the
+                  understanding of public attitudes towards different
+                  post-pandemic trending topics on social media
                 </span>
               </ul>
               <ul>
                 <GoChevronRight className={styles.icon} />
                 <span>
-                  Leverage short video data to build a multi-task, multi-modal
+                  Using short video data to build a multi-task, multi-modal
                   artificial intelligence system for analyzing the influence of
-                  different video features on the sales of Tiktok e-commerce
+                  different video features on the sales of Douyin e-commerce
                   products.
                 </span>
               </ul>
@@ -289,7 +295,7 @@ function Experience() {
             <div className={styles.left}>
               Student Innovation Program, supervised by{' '}
               <a href="http://bs.ustc.edu.cn/English/profile-70.html">
-                Prof. Yongjun Li
+                Dr. Yongjun Li
               </a>
             </div>
             <div className={styles.right}>Fall 2022 - Present</div>
@@ -362,9 +368,9 @@ function Experience() {
             <a href="https://github.com/Dune-Z/Machine-Learning-Project">
               <BsGithub className={styles.icon} />
             </a>
-            <a href="/MLProjectModel.svg">
+            <Link href="/MLProjectModel.svg">
               <BsFileEarmarkSlides className={styles.icon} />
-            </a>
+            </Link>
           </span>
         </ul>
         <ul>
@@ -405,8 +411,8 @@ function Skills() {
       <div className={styles.content}>
         <ul>
           <GoChevronRight className={styles.icon} />
-          Knowledge:&nbsp; fundamentals of machine learning, probability theory,
-          linear algebra, logics, graph theory, etc.
+          Knowledge:&nbsp; fundamentals of Machine Learning, Probability Theory,
+          Linear algebra, Logics, Graph Theory, etc.
         </ul>
         <ul>
           <GoChevronRight className={styles.icon} />
