@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "dotenv -e .env -c -- bash -c 'next dev -H $NEXTJS_HOST -p $NEXTJS_PORT'",
     "start": "dotenv -e .env -c -- bash -c 'next start -H $NEXTJS_HOST -p $NEXTJS_PORT'",
-    "build": "dotenv -e .env -c -- bash -c 'next build'",
+    "build": "dotenv -e .env -c -- bash -c 'next build && next export'",
     "lint": "next lint"
   },
   "dependencies": {
@@ -17,7 +17,7 @@
     "eslint": "8.32.0",
     "eslint-config-next": "13.1.4",
     "markdown-it": "^13.0.1",
-    "next": "^13.1.6-canary.1",
+    "next": "^13.2.5-canary.3",
     "react": "18.2.0",
     "react-devicons": "^2.14.0",
     "react-dom": "18.2.0",

@@ -1,13 +1,11 @@
-import '@/styles/globals.css'
 import styles from '@/styles/home.module.css'
 
-import logoBadge from '@/public/ustc-badge.svg'
-import logoName from '@/public/ustc-name.svg'
-import avatar from '@/public/id.png'
-import qqCode from '@/public/qq_qr.jpg'
-import wechatCode from '@/public/wechat_qr.png'
-import snapchatCode from '@/public/snapcode.svg'
-import MLProjectModel from '@/public/ml-pj.drawio.svg'
+import logoBadge from '@/assets/ustc-badge.svg'
+import logoName from '@/assets/ustc-name.svg'
+import avatar from '@/assets/id.png'
+import qqCode from '@/assets/qq_qr.jpg'
+import wechatCode from '@/assets/wechat_qr.png'
+import snapchatCode from '@/assets/snapcode.svg'
 
 import {
   BsPersonLinesFill,
@@ -43,8 +41,8 @@ import {
 } from 'react-devicons'
 
 import profile_md from '@/docs/profile.md'
-import research_md from '@/docs/research.md'
 
+import Link from 'next/link'
 import Image from 'next/image'
 import Markdown from '@/components/Markdown'
 import HoverImage from '@/components/HoverImage'
@@ -308,7 +306,6 @@ function Experience() {
             </em>
           </div>
         </div>
-        {/* <Markdown className={styles.markdown} content={research_md} /> */}
         {/* Competition */}
         <p className={styles.head}>
           <AiOutlineFlag className={styles.icon} />
@@ -365,9 +362,9 @@ function Experience() {
             <a href="https://github.com/Dune-Z/Machine-Learning-Project">
               <BsGithub className={styles.icon} />
             </a>
-            <HoverImage className={styles.fig} src={MLProjectModel} alt="">
+            <Link href="/MLProjectModel.svg">
               <BsFileEarmarkSlides className={styles.icon} />
-            </HoverImage>
+            </Link>
           </span>
         </ul>
         <ul>
