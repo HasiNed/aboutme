@@ -1,7 +1,7 @@
 .main {
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   font-family: var(--font-serif);
 }
 .icon {
@@ -114,6 +114,7 @@
 
 .grid {
   display: grid;
+  width: 100%;
   grid-template:
     'profile experience'
     'education experience'
@@ -122,8 +123,7 @@
     / 43% 57%;
   grid-row-gap: 1rem;
   grid-column-gap: 2rem;
-  margin-left: 2rem;
-  margin-right: 3rem;
+  padding: 0 2rem;
 }
 @media screen and (max-width: 64rem) {
   .grid {
@@ -217,14 +217,6 @@
 
 .experience .title {
   margin-bottom: -0.5rem;
-}
-.experience .fig {
-  position: absolute;
-  bottom: 1rem;
-  transform: translateX(-50%);
-  background: white;
-  border-radius: 3rem;
-  padding: 1rem;
 }
 
 .markdown {
