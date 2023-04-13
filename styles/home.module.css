@@ -4,7 +4,6 @@
   width: 100%;
   font-family: var(--font-serif);
 }
-
 .icon {
   flex-shrink: 0;
   position: relative;
@@ -25,12 +24,10 @@
 }
 .navbar > .name {
   letter-spacing: 0.3rem;
-  font-size: 2.5rem;
-}
-.navbar > .name > em {
-  margin-left: 2rem;
-  font-style: normal;
   font-size: 3rem;
+  word-spacing: 1.5rem;
+  margin-left: 2rem;
+  font-variant: small-caps;
 }
 .navbar > hr {
   margin: 0 1rem;
@@ -43,10 +40,8 @@
 .navbar > .profession {
   margin: 0.5rem 2rem;
   letter-spacing: 0.1rem;
-}
-.navbar > .profession > em {
-  font-style: normal;
   font-size: 1.2rem;
+  font-variant: small-caps;
 }
 
 .contact {
@@ -203,7 +198,8 @@
 .profile .avatar {
   float: left;
   margin-right: 1rem;
-  width: 7rem;
+  width: 8rem;
+  border-radius: 1rem;
   height: min-content;
 }
 

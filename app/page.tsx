@@ -64,13 +64,10 @@ export default async function HomePage() {
 function NavBar() {
   return (
     <nav className={styles.navbar}>
-      <div className={styles.name}>
-        <em>Y</em>UNQIN<em>Z</em>HU
-      </div>
+      <div className={styles.name}>Yunqin Zhu</div>
       <hr />
       <div className={styles.profession}>
-        <em>U</em>NIVERSITY OF <em>S</em>CIENCE AND <em>T</em>ECHNOLOGY OF{' '}
-        <em>C</em>HINA
+        University of Science and Technology of China
       </div>
       <div className={styles.contact}>
         <div>
@@ -146,7 +143,7 @@ function Education() {
           <div className={styles.line}>
             <BsStars className={styles.icon} />
             <b>
-              GPA: <em>4.07/4.3</em>&nbsp;&nbsp;&nbsp;
+              GPA: <em>4.06/4.3</em>&nbsp;&nbsp;&nbsp;
               <ImStatsBars className={styles.icon} />
               Rank: <em>1/39</em>
             </b>
@@ -167,25 +164,34 @@ function Education() {
             <HiOutlineBookOpen className={styles.icon} />
             On-going:&nbsp;
             <em>
-              Knowledge Engineering, Pattern Recognition, Deep Learning, etc.
+              Knowledge Engineering, Pattern Recognition, Game Theory, etc.
             </em>
           </div>
           <div className={styles.line}>
             References:&nbsp;
-            <a
+            {/* <a
               className={styles.attach}
               href="http://home.ustc.edu.cn/~hasined/misc/%E6%99%AE%E9%80%9A%E6%88%90%E7%BB%A9%E5%8D%95%E8%8B%B1%E6%96%87_%E5%87%BA%E5%9B%BD%E7%94%A8_%E6%9C%B1%E4%BA%91%E6%B2%81%28PB20061372%29.pdf"
             >
               <GrAttachment className={styles.icon} />
               transcript.pdf
-            </a>
-            <a
+            </a> */}
+            <span className={styles.attach}>
+              <GrAttachment className={styles.icon} />
+              <del>transcript.pdf</del>
+            </span>
+            {/* <a
               className={styles.attach}
               href="http://home.ustc.edu.cn/~hasined/misc/%E7%BB%A9%E7%82%B9%E6%8E%92%E5%90%8D%E8%AF%81%E6%98%8E_%E5%87%BA%E5%9B%BD%E7%94%A8_%E6%9C%B1%E4%BA%91%E6%B2%81%28PB20061372%29.pdf"
             >
               <GrAttachment className={styles.icon} />
               ranking.pdf
-            </a>
+            </a> */}
+            <span className={styles.attach}>
+              <GrAttachment className={styles.icon} />
+              <del>ranking.pdf</del>
+            </span>
+            (available upon request)&nbsp;
             <a
               className={styles.attach}
               href="https://github.com/HasiNed/my-ustc"
@@ -218,13 +224,13 @@ function Experience() {
             <div className={styles.left}>
               University of North Carolina at Charlotte, KAIM Research Group
             </div>
-            <div className={styles.right}>Charlotte, US</div>
+            <div className={styles.right}>Charlotte, USA</div>
           </div>
           <div className={styles.subname}>
             <div className={styles.left}>
-              Remote Rsearch Intern, supervised by{' '}
+              Remote Research Intern, supervised by{' '}
               <a href="https://belkcollege.charlotte.edu/directory/lina-zhou">
-                Prof. Lina Zhou
+                Dr. Lina Zhou
               </a>{' '}
               and her Ph.D. fellows
             </div>
@@ -233,8 +239,7 @@ function Experience() {
           <div className={styles.line}>
             Fields of Study:&nbsp;
             <em>
-              Misinformation Detection, Sentiment Analysis and Multi-Modal
-              Learning
+              Content Moderation, Sentiment Analysis and Multi-Modal Learning
             </em>
           </div>
           <div className={styles.line}>
@@ -243,38 +248,36 @@ function Experience() {
               <ul>
                 <GoChevronRight className={styles.icon} />
                 <span>
-                  Predict the results of content moderation on Reddit with the
-                  RoBERTa model and analyze the impact of multi-type,
-                  multi-level user engagement characteristics on model
-                  performance.
+                  Leveraging RoBERTa to predict content moderation decisions and
+                  analyzing the impact of various user engagement
+                  characteristics on model performance
                 </span>
               </ul>
               <ul>
                 <GoChevronRight className={styles.icon} />
                 <span>
-                  Apply deep learning methods of natural language understanding
-                  to analyze the public&apos;s attitudes and sentiments towards
-                  different trending topics on social media in the post-pandemic
-                  era.
+                  Applying N-shot learning on semi-labeled data to deepen the
+                  understanding of public attitudes towards different
+                  post-pandemic trending topics on social media
                 </span>
               </ul>
               <ul>
                 <GoChevronRight className={styles.icon} />
                 <span>
-                  Leverage short video data to build a multi-task, multi-modal
+                  Using short video data to build a multi-task, multi-modal
                   artificial intelligence system for analyzing the influence of
-                  different video features on the sales of Tiktok e-commerce
+                  different video features on the sales of Douyin e-commerce
                   products.
                 </span>
               </ul>
             </em>
-            Publication:
+            {/* Publication:
             <div className={styles.quote}>
               Wang, K., Fu, Z., Zhou, L., & <ins>Zhu, Y</ins>. (2022).
               Misinformation Moderation in Online Communities: The
               Characteristics, Degree, and Efficiency of User Engagement.{' '}
               <em>CCCIS Proceedings</em> (pp. 1-6).
-            </div>
+            </div> */}
           </div>
         </div>
         <div className={styles.item}>
@@ -289,7 +292,11 @@ function Experience() {
             <div className={styles.left}>
               Student Innovation Program, supervised by{' '}
               <a href="http://bs.ustc.edu.cn/English/profile-70.html">
-                Prof. Yongjun Li
+                Dr. Yongjun Li
+              </a>{' '}
+              and{' '}
+              <a href="https://bs.ustc.edu.cn/english/profile-1708.html">
+                Dr. Lizheng Wang
               </a>
             </div>
             <div className={styles.right}>Fall 2022 - Present</div>
@@ -304,6 +311,25 @@ function Experience() {
               Dynamic pricing optimization considering learning behavior in the
               context of big data
             </em>
+          </div>
+        </div>
+        <div className={styles.item}>
+          <div className={styles.name}>
+            <div className={styles.left}>
+              The Hong Kong University of Science and Technology (Guangzhou),
+              Thrust of Artificial Intelligence
+            </div>
+            <div className={styles.right}>Hong Kong, China</div>
+          </div>
+          <div className={styles.subname}>
+            <div className={styles.left}>
+              Research Assistant, supervised by{' '}
+              <a href="http://datamining.rutgers.edu/">Dr. Hui Xiong</a> and{' '}
+              <a href="https://scholar.google.com/citations?user=j08V64UAAAAJ">
+                Dr. Chao Wang
+              </a>
+            </div>
+            <div className={styles.right}>Spring 2023 - Present</div>
           </div>
         </div>
         {/* Competition */}
@@ -405,8 +431,8 @@ function Skills() {
       <div className={styles.content}>
         <ul>
           <GoChevronRight className={styles.icon} />
-          Knowledge:&nbsp; fundamentals of machine learning, probability theory,
-          linear algebra, logics, graph theory, etc.
+          Knowledge:&nbsp; fundamentals of Machine Learning, Probability Theory,
+          Linear algebra, Logics, Graph Theory, etc.
         </ul>
         <ul>
           <GoChevronRight className={styles.icon} />
@@ -418,7 +444,7 @@ function Skills() {
         </ul>
         <ul>
           <GoChevronRight className={styles.icon} />
-          Deep learning framework:&nbsp; PyTorch
+          Deep learning framework:&nbsp; PyTorch, Tensorflow
         </ul>
         <ul>
           <GoChevronRight className={styles.icon} />
