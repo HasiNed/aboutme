@@ -1,6 +1,4 @@
-@import url('https://cdn.jsdelivr.net/gh/vsalvino/computer-modern@main/fonts/sans.css');
-@import url('https://cdn.jsdelivr.net/gh/vsalvino/computer-modern@main/fonts/serif.css');
-@import url('https://cdn.jsdelivr.net/gh/vsalvino/computer-modern@main/fonts/typewriter.css');
+@import url('https://cdn.jsdelivr.net/gh/dreampulse/computer-modern-web-font@master/fonts.css');
 
 :root {
   --font-serif: 'Computer Modern Serif', ui-serif, Georgia, Cambria,
