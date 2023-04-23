@@ -142,10 +142,15 @@ function Education() {
           </div>
           <div className={styles.line}>
             <BsStars className={styles.icon} />
-            <b>
+            {/* <b>
               GPA: <em>4.06/4.3</em>&nbsp;&nbsp;&nbsp;
               <ImStatsBars className={styles.icon} />
               Rank: <em>1/39</em>
+            </b> */}
+            <b>
+              GPA: (hidden) &nbsp;&nbsp;&nbsp;
+              <ImStatsBars className={styles.icon} />
+              Rank: (hidden)
             </b>
           </div>
           <div className={styles.line}>
@@ -319,7 +324,7 @@ function Experience() {
               The Hong Kong University of Science and Technology (Guangzhou),
               Thrust of Artificial Intelligence
             </div>
-            <div className={styles.right}>Hong Kong, China</div>
+            <div className={styles.right}>Guangzhou, China</div>
           </div>
           <div className={styles.subname}>
             <div className={styles.left}>
